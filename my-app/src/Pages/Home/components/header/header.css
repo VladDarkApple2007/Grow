@@ -1,0 +1,236 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+header {
+  font-family: "Montserrat", sans-serif;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.line_header {
+  margin: 0 auto;
+  max-width: 1100px;
+  height: 1px;
+  background-color: #fbfbfb;
+}
+
+.header__container {
+  margin-top: 20px;
+  max-width: 1150px;
+  margin-bottom: 40px;
+  display: flex;
+  height: 450px;
+  background-color: #f5f5f580;
+  position: relative;
+  overflow: hidden;
+}
+
+.header__title-button {
+  padding-top: 70px;
+  padding-left: 45px;
+  z-index: 2;
+}
+
+.header__top-title {
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 600;
+  line-height: 16px;
+  letter-spacing: 10%;
+  color: #3d3d3d;
+}
+
+.header__title h1,
+.header__title h2 {
+  margin-top: 10px;
+  font-size: 70px;
+  font-weight: 900;
+  line-height: 70px;
+  color: #3d3d3d;
+}
+
+.header__title h1 span {
+  color: #46a358;
+}
+
+.header__title h2 span {
+  color: #b93d3d;
+}
+
+.header__sub-title {
+  margin-top: 10px;
+  max-width: 557px;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #727272;
+}
+
+.header__button,
+.header__button--sec {
+  margin-top: 45px;
+  width: 140px;
+  height: 40px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.header__button {
+  background-color: #46a358;
+}
+
+.header__button--sec {
+  background-color: #b93d3d;
+}
+
+.header__button span,
+.header__button--sec span {
+  color: #fff;
+  font-weight: 600;
+}
+
+.header__button:hover {
+  background-color: #3d8a4d;
+  transform: translateY(-2px);
+}
+
+.header__button--sec:hover {
+  background-color: #a13535;
+  transform: translateY(-2px);
+}
+
+.header__image {
+  position: relative;
+  width: 50%;
+}
+
+.header__image--flower {
+  position: absolute;
+  right: 0;
+  top: -50px;
+  max-height: 500px;
+  width: auto;
+}
+
+.header__image--small_flower {
+  position: absolute;
+  right: 150px;
+  bottom: 0;
+  max-height: 150px;
+  width: auto;
+}
+
+/* Адаптивні стилі */
+@media (max-width: 992px) {
+  .header__container {
+    height: 400px;
+  }
+  
+  .header__title h1,
+  .header__title h2 {
+    font-size: 50px;
+    line-height: 55px;
+  }
+  
+  .header__image--flower {
+    max-height: 400px;
+    top: 0;
+  }
+  
+  .header__image--small_flower {
+    max-height: 120px;
+    right: 100px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header__container {
+    flex-direction: column;
+    height: auto;
+    padding-bottom: 30px;
+  }
+  
+  .header__title-button {
+    padding: 40px 25px 0;
+    order: 1;
+  }
+  
+  .header__title h1,
+  .header__title h2 {
+    font-size: 40px;
+    line-height: 45px;
+  }
+  
+  .header__image {
+    width: 100%;
+    height: 300px;
+    order: 2;
+  }
+  
+  .header__image--flower {
+    position: relative;
+    max-height: 300px;
+    top: auto;
+    right: auto;
+    margin: 0 auto;
+    display: block;
+  }
+  
+  .header__image--small_flower {
+    display: none;
+  }
+  
+  .header__button,
+  .header__button--sec {
+    margin-top: 30px;
+    width: 120px;
+    height: 36px;
+  }
+}
+
+@media (max-width: 480px) {
+  .header__title h1,
+  .header__title h2 {
+    font-size: 32px;
+    line-height: 38px;
+  }
+  
+  .header__sub-title {
+    font-size: 13px;
+    line-height: 18px;
+  }
+  
+  .header__image {
+    height: 250px;
+  }
+  
+  .header__image--flower {
+    max-height: 250px;
+  }
+}
+
+/* Стилі для Swiper */
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Анімація для кнопок */
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
+.header__button:hover,
+.header__button--sec:hover {
+  animation: pulse 1s infinite;
+}

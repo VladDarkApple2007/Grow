@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+.sort_flex {
+   display: flex;
+}
+
+.p_sort_icon {
+   display: flex;
+}
+
+.icon_sort {
+   margin-top: 2px;
+}
+
+.p_sort_flex {
+font-family: 'Montserrat', sans-serif;
+font-size: 15px;
+font-weight: 400;
+line-height: 16px;
+
+}
+
+.p_sort_icon p {
+font-family: 'Montserrat', sans-serif;
+font-size: 15px;
+font-weight: 400;
+line-height: 16px;
+}

@@ -1,0 +1,39 @@
+[
+  {
+    "name": "Barberton Daisy",
+    "img": "http://localhost:3000/static/media/image%201.53114ccc3fe8556ec112.png",
+    "price": "$119.00",
+    "id": "0",
+    "category": "1"
+  },
+  {
+    "name": "Angel Wing Begonia",
+    "img": "http://localhost:3000/static/media/product-21-320x320%201.8e8bc3fc43d05d261822.png",
+    "price": "$169.00",
+    "id": "1",
+    "category": "2"
+  },
+  {
+    "name": "African Violet",
+    "img": "http://localhost:3000/static/media/image%202.e797a1efeba318b8666a.png",
+    "price": "$199.00",
+    "lastprice": "$229.00",
+    "id": "2",
+    "category": "3"
+  },
+  {
+    "name": "Broadleaf Lady Palm",
+    "img": "http://localhost:3000/static/media/product-20-320x320%201.4908f7f1f6f007766201.png",
+    "price": "$59.00",
+    "id": "4",
+    "category": "8"
+  },
+  {
+    "name": "Blushing Bromeliad",
+    "img": "http://localhost:3000/static/media/image%207.e27d32768faed85de922.png",
+    "price": "$139.00",
+    "id": "4",
+    "category": "5"
+  }
+
+   ]

@@ -1,0 +1,177 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+/* Базові стилі */
+main {
+  font-family: "Montserrat", sans-serif;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.section_home {
+  padding: 0 15px;
+}
+
+.home_container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin: 20px 0 40px;
+}
+
+.home_container_filter {
+  flex: 0 0 310px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  position: sticky;
+  top: 20px;
+  height: fit-content;
+}
+
+.home_container_product {
+  flex: 1;
+  min-width: 300px;
+}
+
+.product_home_flex {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.sale_home img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.sale_home img:hover {
+  transform: translateY(-5px);
+}
+
+.home_category_sort {
+  margin-bottom: 20px;
+}
+
+.buuton_next_home {
+  display: flex;
+  justify-content: center;
+  margin: 50px 0;
+}
+
+.no-products {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: 60px 20px;
+  background: #f9f9f9;
+  border-radius: 8px;
+}
+
+.no-products h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.no-products p {
+  font-size: 16px;
+  color: #666;
+}
+
+.home_posts {
+  margin-top: 80px;
+  padding: 0 15px;
+}
+
+/* Адаптивні стилі */
+@media (max-width: 1024px) {
+  
+  .sale_home {
+    display: none;
+  }
+
+  .home_container_filter {
+    position: static;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  
+  .home_filter {
+    margin-right: 0;
+    flex: 1;
+    min-width: 280px;
+  }
+  
+  .sale_home {
+    flex: 1;
+    min-width: 280px;
+  }
+}
+
+@media (max-width: 768px) {
+  .product_home_flex {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    padding-left: 40px;
+  }
+  
+  .home_category_sort {
+    justify-content: center;
+  }
+  
+  .no-products {
+    padding: 40px 15px;
+  }
+  
+  .no-products h2 {
+    font-size: 20px;
+  }
+  
+  .no-products p {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 576px) {
+  .product_home_flex {
+    grid-template-columns: 1fr;
+    padding-left: 40px;
+  }
+  
+  .home_container_filter {
+    flex-direction: column;
+  }
+  
+  .home_filter, 
+  .sale_home {
+    width: 100%;
+  }
+  
+  .buuton_next_home {
+    margin: 30px 0;
+  }
+  
+  .home_posts {
+    margin-top: 50px;
+  }
+}
+
+/* Анімації */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.product_home_flex {
+  animation: fadeIn 0.5s ease-out;
+}
+
+/* Плавні переходи */
+.home_container_filter,
+.home_container_product,
+.home_posts {
+  transition: all 0.3s ease;
+}

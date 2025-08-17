@@ -1,0 +1,305 @@
+/* Базові стилі */
+.checkout-container {
+  font-family: "Montserrat", sans-serif;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.checkout-subheader {
+  margin-bottom: 30px;
+}
+
+.checkout-subheader_p {
+  font-size: 14px;
+  color: #3D3D3D;
+}
+
+.checkout-subheader_p span {
+  font-weight: 400;
+}
+
+.checkout-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+/* Форма оформлення */
+.checkout-form {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.required-label {
+  position: relative;
+}
+
+.required-star {
+  color: #E53935;
+  margin-left: 4px;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #EAEAEA;
+  border-radius: 6px;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+select:focus,
+textarea:focus {
+  border-color: #46A358;
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(70, 163, 88, 0.2);
+}
+
+.phone-form {
+  width: 100%;
+}
+
+textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+/* Секція з підсумком замовлення */
+.order-summary {
+  background: #FBFBFB;
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.05);
+  border: 1px solid #F0F0F0;
+}
+
+.summary-title {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #3D3D3D;
+}
+
+.summary-names {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.summary-lines {
+  height: 1px;
+  background: rgba(70, 163, 88, 0.2);
+  margin: 15px 0;
+}
+
+.order-items {
+  margin-bottom: 20px;
+}
+
+.order-item {
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #F0F0F0;
+}
+
+.order-image {
+  width: 60px;
+  height: 60px;
+  margin-right: 15px;
+}
+
+.order-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.order-details {
+  flex: 1;
+}
+
+.order-details_name {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.order-details_sku {
+  font-size: 12px;
+  color: #A5A5A5;
+}
+
+.order-right-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.order-count {
+  font-size: 12px;
+  color: #727272;
+  margin-bottom: 5px;
+}
+
+.orderesss-price {
+  font-size: 15px;
+  font-weight: 700;
+  color: #46A358;
+}
+
+.order-coupon_have {
+  font-size: 14px;
+  text-align: right;
+  margin: 15px 0;
+}
+
+.order-coupon_have span {
+  color: #46A358;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.subtotals-row {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+  font-size: 14px;
+}
+
+.order_totals-row {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.order_totals-row span {
+  color: #46A358;
+}
+
+/* Методи оплати */
+.payment-method {
+  margin-top: 30px;
+}
+
+.payment-method h3 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #3D3D3D;
+}
+
+.payment-option {
+  display: flex;
+  align-items: center;
+  padding: 12px 15px;
+  margin-bottom: 10px;
+  border: 1px solid #EAEAEA;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.payment-option.selected {
+  border-color: #46A358;
+  background: rgba(70, 163, 88, 0.05);
+}
+
+.payment-option input[type="radio"] {
+  margin-right: 10px;
+}
+
+.payment-logos {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+}
+
+.payment-logos img {
+  height: 20px;
+  margin-right: 10px;
+}
+
+.place-order {
+  width: 100%;
+  background: #46A358;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 15px;
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.place-order:hover {
+  background: #3D8A4D;
+  transform: translateY(-2px);
+}
+/* Адаптивність */
+@media (min-width: 768px) {
+  .checkout-grid {
+    flex-direction: row;
+  }
+  
+  .order-summary {
+    width: 350px;
+    position: sticky;
+    top: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .checkout-form {
+    grid-template-columns: 1fr;
+  }
+  
+  .order-item {
+    flex-wrap: wrap;
+  }
+  
+  .order-right-section {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+  
+  .payment-logos {
+    flex-wrap: wrap;
+    gap: 5px;
+  }
+  
+  .payment-logos img {
+    height: 16px;
+  }
+}

@@ -1,0 +1,116 @@
+.product_home {
+  font-family: "Montserrat", sans-serif;
+  width: 230px;
+  background-color: #fff;
+  position: relative;
+  cursor: pointer;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  transition: all 0.3s ease;
+  border: 1px solid #f0f0f0;
+}
+
+.product_home:hover {
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transform: translateY(-3px);
+}
+
+.name_product_home {
+  margin: 15px 12px 0;
+  font-size: 15px;
+  font-weight: 500;
+  color: #3d3d3d;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.price_product_home {
+  margin: 8px 12px 15px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #46a358;
+}
+
+.photo_prod {
+  position: relative;
+  width: 100%;
+  height: 180px;
+  background: #fbfbfb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.photo_prod img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.product_home:hover .photo_prod img {
+  transform: scale(1.05);
+}
+
+.product_actions {
+  position: absolute;
+  bottom: 15px;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.product_home:hover .product_actions {
+  opacity: 1;
+}
+
+.action_btn {
+  background: white;
+  border: none;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: all 0.2s ease;
+  color: #555;
+}
+
+.action_btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  color: #46a358;
+}
+
+.action_btn.active {
+  background: #46a358;
+  color: white;
+}
+
+.action_btn.active:hover {
+  color: white;
+  background: #3d8a4d;
+}
+
+.action_btn svg {
+  font-size: 14px;
+}
+
+@media (max-width: 1124px) {
+  .product_home {
+    width: 200px;
+  }
+  .photo_prod {
+    height: 160px;
+  }
+}

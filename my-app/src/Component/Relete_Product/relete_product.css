@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+
+.product_ralete {
+   display: flex;
+   margin-top: 44px;
+}
+
+
+.container_ralete {
+   margin-top: 127px;
+   font-family: 'Montserrat', sans-serif;
+
+}
+
+.Relete_h3 {
+font-size: 17px;
+font-weight: 700;
+line-height: 16px;
+color: #46A358;
+}
+
+.line_ralete {
+   width: 1200px;
+   height: 1px;
+   margin-top: 12px;
+   background-color: #46A358;
+   opacity: 0.1;
+}
+
+.name_obj {
+   margin-top: 12px;
+font-size: 15px;
+font-weight: 400;
+line-height: 16px;
+
+}
+
+.price_obj {
+   margin-top: 10px;
+font-size: 16px;
+font-weight: 700;
+line-height: 16px;
+color: #46A358;
+}

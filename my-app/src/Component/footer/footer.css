@@ -1,0 +1,298 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+
+.footer_container {
+  font-family: 'Montserrat', sans-serif;
+  max-width: 1350px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.top_footer {
+  padding: 30px 0;
+  background-color: #FBFBFB;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  align-items: center;
+}
+
+.block_one {
+  padding: 0 15px;
+  text-align: center;
+}
+
+.img_footer {
+  display: flex;
+  justify-content: center;
+}
+
+.img_footer img {
+  max-width: 60px;
+  height: auto;
+}
+
+.title_footer_block {
+  padding-top: 17px;
+  font-size: 17px;
+  font-weight: 700;
+  color: #3D3D3D;
+}
+
+.desc_footer {
+  padding-top: 9px;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #727272;
+}
+
+.line_footer {
+  display: none;
+}
+
+.midle_footer {
+  background-color: #46A3581A;
+  padding: 25px 15px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  align-items: center;
+}
+
+.logo_footer img {
+  max-width: 150px;
+  height: auto;
+}
+
+.icon_street_footer,
+.icon_text_footer,
+.icon_number_footer {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.icon_footer img,
+.icon_contact img,
+.icon_number img {
+  width: 20px;
+  height: 20px;
+}
+
+.street_footer,
+.email_footer p,
+.contact_footer p {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #3D3D3D;
+}
+
+/* Адаптивні стилі */
+@media (max-width: 1024px) {
+  .top_footer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .midle_footer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .top_footer {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  
+  .block_one {
+    margin-bottom: 20px;
+  }
+  
+  .midle_footer {
+    grid-template-columns: 1fr;
+    text-align: center;
+    justify-items: center;
+  }
+  
+  .icon_street_footer,
+  .icon_text_footer,
+  .icon_number_footer {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .title_footer_block {
+    font-size: 16px;
+  }
+  
+  .desc_footer {
+    font-size: 13px;
+  }
+  
+  .logo_footer img {
+    max-width: 120px;
+  }
+  
+  .street_footer,
+  .email_footer p,
+  .contact_footer p {
+    font-size: 13px;
+  }
+}
+
+/* Анімації */
+.block_one {
+  transition: transform 0.3s ease;
+}
+
+.block_one:hover {
+  transform: translateY(-5px);
+}
+
+.icon_street_footer,
+.icon_text_footer,
+.icon_number_footer {
+  transition: opacity 0.3s ease;
+}
+
+.icon_street_footer:hover,
+.icon_text_footer:hover,
+.icon_number_footer:hover {
+  opacity: 0.8;
+}
+
+.newsletters_block {
+  padding: 0 15px;
+  max-width: 350px;
+  margin: 0 auto;
+}
+
+.title_newsletters {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: #3D3D3D;
+  margin-bottom: 15px;
+  line-height: 1.3;
+}
+
+.input_button_footer {
+  display: flex;
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+.input_footer {
+  flex-grow: 1;
+}
+
+.input_footer input {
+  width: 100%;
+  height: 40px;
+  padding: 0 15px;
+  border: 1px solid #EAEAEA;
+  border-radius: 6px 0 0 6px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+.input_footer input:focus {
+  border-color: #46A358;
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(70, 163, 88, 0.2);
+}
+
+.button_join_footer button {
+  height: 40px;
+  padding: 0 20px;
+  background-color: #46A358;
+  border: none;
+  border-radius: 0 6px 6px 0;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button_join_footer button:hover {
+  background-color: #3d8a4d;
+}
+
+.button_join_footer button span {
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.p_newsletters {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 13px;
+  line-height: 1.6;
+  color: #727272;
+  margin-top: 15px;
+}
+
+/* Адаптивні стилі */
+@media (max-width: 1024px) {
+  .newsletters_block {
+    max-width: 300px;
+  }
+  
+  .title_newsletters {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 768px) {
+  .newsletters_block {
+    max-width: 100%;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  .input_button_footer {
+    justify-content: center;
+  }
+  
+  .input_footer {
+    max-width: 250px;
+  }
+}
+
+@media (max-width: 480px) {
+  .input_button_footer {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .input_footer input {
+    border-radius: 6px;
+    width: 100%;
+    max-width: 250px;
+  }
+  
+  .button_join_footer button {
+    border-radius: 6px;
+    width: 100px;
+  }
+  
+  .p_newsletters {
+    padding: 0 10px;
+  }
+}
+
+/* Анімації */
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
+.button_join_footer button:active {
+  animation: pulse 0.3s ease;
+}

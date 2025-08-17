@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+section {
+   font-family: 'Montserrat', sans-serif;
+      max-width: 1300px;
+   margin: 0 auto;
+
+}
+
+.call_list {
+  display: flex;
+  gap: 30px;
+  margin: 60px 0 20px;
+}
+
+.flex_call_green {
+  font-size: 17px;
+  font-weight: 700;
+  color: #46A358;
+  padding-bottom: 5px;
+  border-bottom: 2px solid #46A358;
+}
+
+.call_line {
+  height: 1px;
+  background-color: rgba(114, 114, 114, 0.15);
+  margin-bottom: 20px;
+}
+
+.p_first_call,
+.p_sec_call,
+.subtitle_p_call {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #727272;
+  margin-bottom: 20px;
+}
+
+.title_p_call {
+  font-size: 14px;
+  font-weight: 700;
+  color: #3D3D3D;
+  margin: 20px 0 10px;
+}
+
+/* Адаптивні стилі */
+@media (max-width: 1024px) {
+  .text_desc_product h5 {
+    font-size: 24px;
+  }
+  
+  .price_shop {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .show_product {
+    flex-direction: column;
+  }
+  
+  .big_photo {
+    max-width: 100%;
+  }
+  
+  .call_list {
+    margin-top: 40px;
+  }
+}
+
+@media (max-width: 576px) {
+  .top_subheader_p {
+    font-size: 13px;
+  }
+  
+  .text_desc_product h5 {
+    font-size: 20px;
+  }
+  
+  .minus_plus {
+    padding: 5px 10px;
+  }
+  
+  .buy_now_shop {
+    padding: 10px 15px;
+    font-size: 14px;
+  }
+  
+  .call_list {
+    gap: 15px;
+    margin-top: 30px;
+  }
+  
+  .flex_call_green {
+    font-size: 15px;
+  }
+}
+
+/* Анімації */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.show_product > *,
+.call_list,
+.p_call > * {
+  animation: fadeIn 0.5s ease-out forwards;
+}
+
+.show_product > *:nth-child(1) { animation-delay: 0.1s; }
+.show_product > *:nth-child(2) { animation-delay: 0.2s; }
+.p_call > *:nth-child(1) { animation-delay: 0.3s; }
+.p_call > *:nth-child(2) { animation-delay: 0.4s; }

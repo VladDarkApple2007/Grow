@@ -1,0 +1,235 @@
+.show_product {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin: 30px 0;
+}
+
+.photos_product {
+  flex: 1;
+  min-width: 300px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  background: #f8f8f8; /* Фон на случай, если изображение прозрачное */
+}
+
+.big_photo {
+  width: 100%;
+  padding-top: 100%; /* Создаем квадратное соотношение сторон */
+  position: relative;
+}
+
+.big_photo img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* Сохраняет пропорции, не обрезая */
+  object-position: center;
+  transition: transform 0.3s ease;
+}
+
+/* Для ретины-дисплеев */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .big_photo img {
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
+  }
+}
+.text_desc_product {
+  flex: 1;
+  min-width: 300px;
+}
+
+.text_desc_product h5 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: #3d3d3d;
+}
+
+.price_shop {
+  font-size: 22px;
+  font-weight: 700;
+  color: #46a358;
+}
+
+.line_product {
+  height: 1px;
+  background-color: #f1eeee;
+  margin: 15px 0;
+}
+
+.title_desc_product {
+  font-size: 15px;
+  font-weight: 600;
+  color: #3d3d3d;
+  margin-bottom: 10px;
+}
+
+.desc_product_shop {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #727272;
+  margin-bottom: 20px;
+}
+
+.button_size_shop {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.minus_plus {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  background: #fbfbfb;
+  border: 1px solid #eaeaea;
+  border-radius: 30px;
+  padding: 5px 15px;
+}
+
+.minus_plus button {
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  color: #46a358;
+}
+
+.span_count {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.buy_now_shop {
+  background: #46a358;
+  color: white;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 6px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.buy_now_shop:hover {
+  background: #3d8a4d;
+  transform: translateY(-2px);
+}
+
+.like_product {
+  width: 40px;
+  height: 40px;
+  border: 1px solid #46a358;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.like_product:hover {
+  background: #46a358;
+}
+
+.like_product:hover img {
+  filter: brightness(0) invert(1);
+}
+
+.sub_desc_p {
+  margin: 20px 0;
+}
+
+.span_shop_sub {
+  font-size: 14px;
+  color: #a5a5a5;
+  margin-bottom: 8px;
+}
+
+.span_shop_sub span {
+  color: #727272;
+}
+
+.social {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.social p {
+  font-size: 14px;
+  color: #3d3d3d;
+}
+
+.social img {
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.social img:hover {
+  transform: translateY(-3px);
+}
+
+.minus_plus {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  background: #fbfbfb;
+  border: 1px solid #eaeaea;
+  border-radius: 30px;
+  padding: 5px 15px;
+}
+
+.minus_plus_product {
+  background: none;
+  border: none;
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.line_buton_minus {
+  width: 12px;
+  height: 2px;
+  background-color: #000;
+}
+
+.minus_plus_product::after {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 2px;
+  background-color: #000;
+}
+
+.minus_plus_product::before {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 12px;
+  background-color: #000;
+  display: none;
+}
+
+.minus_plus_product:last-child::before {
+  display: block; /* показуємо вертикальну лінію тільки для плюса */
+}
+
+.span_count {
+  font-size: 16px;
+  font-weight: 500;
+  min-width: 20px;
+  text-align: center;
+}

@@ -1,0 +1,64 @@
+.big-shop_container {
+  display: flex;
+  max-width: 1300px;
+  margin: 0 auto;
+  flex-direction: column;
+}
+
+.big-shop_products {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 18px;
+  gap: 20px;
+  padding: 20px;
+  justify-content: center;
+}
+
+.filter__block--shop {
+  position: static;
+  width: 100%;
+  padding: 15px;
+  background-color: #f8f8f8;
+  margin-bottom: 20px;
+}
+
+.no-products {
+  text-align: center;
+  width: 100%;
+  padding: 40px 0;
+}
+
+/* Планшети (768px і вище) */
+@media (min-width: 768px) {
+  .big-shop_container {
+    flex-direction: row;
+  }
+  
+  .big-shop_products {
+    margin-left: 300px;
+    column-gap: 30px;
+    row-gap: 40px;
+    justify-content: flex-start;
+  }
+  
+  .filter__block--shop {
+    position: fixed;
+    width: 280px;
+    padding: 20px;
+    background-color: transparent;
+    margin-bottom: 0;
+  }
+}
+
+/* Десктопи (1024px і вище) */
+@media (min-width: 1024px) {
+  .big-shop_products {
+    margin-left: 350px;
+    column-gap: 40px;
+    row-gap: 50px;
+  }
+  
+  .filter__block--shop {
+    width: 320px;
+  }
+}

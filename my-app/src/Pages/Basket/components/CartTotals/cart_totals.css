@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+
+.cart-totals {
+  background: white;
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.05);
+  border: 1px solid #f0f0f0;
+  margin-top: 20px;
+}
+
+.cart-totals h3 {
+  font-size: 18px;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #EAEAEA;
+}
+
+.coupon {
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+.coupon-inputs {
+  display: flex;
+  margin-bottom: 25px;
+}
+
+.coupon-inputs input {
+  flex: 1;
+  padding: 10px 15px;
+  border: 1px solid #EAEAEA;
+  border-radius: 6px 0 0 6px;
+  font-size: 14px;
+}
+
+.coupon-inputs button {
+  padding: 0 20px;
+  background: #46A358;
+  color: white;
+  border: none;
+  border-radius: 0 6px 6px 0;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.coupon-inputs button:hover {
+  background: #3D8A4D;
+}
+
+.subtotals-row, 
+.totals-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  font-size: 14px;
+  border-bottom: 1px solid #F5F5F5;
+}
+
+.totals-row.total {
+  font-weight: 700;
+  font-size: 16px;
+  color: #46A358;
+  border-bottom: none;
+  margin-top: 15px;
+}
+
+.checkout-button {
+  width: 100%;
+  background: #46A358;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 15px;
+  font-weight: 700;
+  margin-top: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.checkout-button:hover {
+  background: #3D8A4D;
+  transform: translateY(-2px);
+}
+
+.continue {
+  width: 100%;
+  background: none;
+  color: #46A358;
+  border: none;
+  padding: 10px;
+  margin-top: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.continue:hover {
+  color: #3D8A4D;
+}
+
+/* Адаптивні стилі */
+@media (min-width: 768px) {
+  .basket_flex {
+    flex-direction: row;
+  }
+  
+  .cart-totals {
+    margin-top: 55px;
+    margin-left: 30px;
+    max-width: 350px;
+  }
+}
+
+@media (max-width: 480px) {
+  .basket-item {
+    flex-direction: column;
+  }
+  
+  .item-image {
+    margin: 0 auto;
+  }
+  
+  .item-controls {
+    flex-direction: column;
+    gap: 15px;
+    align-items: flex-start;
+  }
+  
+  .coupon-inputs {
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .coupon-inputs input {
+    border-radius: 6px;
+  }
+  
+  .coupon-inputs button {
+    border-radius: 6px;
+    padding: 10px;
+  }
+}
+
+/* Анімації */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.basket-item {
+  animation: fadeIn 0.5s ease-out forwards;
+}
+
+.basket-item:nth-child(1) { animation-delay: 0.1s; }
+.basket-item:nth-child(2) { animation-delay: 0.2s; }
+.basket-item:nth-child(3) { animation-delay: 0.3s; }
