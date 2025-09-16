@@ -4,6 +4,7 @@ import { Route, Routes, useLocation } from "react-router-dom";
 import Navbar from "./Component/navbar/Navbar";
 import Footer from "./Component/footer/Footer";
 import LoadingSpinner from "./Component/LoadingSpinner/LoadingSpinner";
+import Prev from "./Pages/Prev/Prev";
 
 const Home = React.lazy(() => import("./Pages/Home/Home"));
 const CartItem = React.lazy(() => import("./Pages/CartItem/CartItem"));
@@ -35,6 +36,7 @@ export default function AppRouter() {
       {!hideLayout && <Navbar />} 
       <Suspense fallback={<LoadingSpinner/>}>
         <Routes>
+          <Route path="/Grow" element={<Prev />} /> 
           <Route path="/" element={<Home />} /> 
           <Route path="/product/:id" element={<CartItem />} />
           <Route path="/carts" element={<Shop />} />
